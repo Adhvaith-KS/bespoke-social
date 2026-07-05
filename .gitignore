@@ -1,0 +1,7 @@
+# Personal Claude Code settings (each dev configures their own)
+.claude/
+
+# Env files live only on each machine
+.env
+.env.local
+.env*.local

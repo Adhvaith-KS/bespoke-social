@@ -1,0 +1,15 @@
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  background: var(--accent-gold);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 900;
+  object-fit: cover;
+  overflow: hidden;
+  user-select: none;
+}

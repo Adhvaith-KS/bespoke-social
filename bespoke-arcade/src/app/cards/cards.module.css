@@ -1,0 +1,253 @@
+.cardsPage {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.titleGradient {
+  color: var(--ink);
+}
+
+.subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.counter {
+  margin-top: var(--space-3);
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--accent-purple-light);
+}
+
+.message {
+  position: fixed;
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-5);
+  font-weight: 600;
+  z-index: 50;
+  box-shadow: var(--shadow-glow-purple);
+}
+
+/* Mint form */
+.mintZone {
+  display: flex;
+  justify-content: center;
+}
+
+.mintForm {
+  width: 100%;
+  max-width: 480px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-glow-purple);
+}
+
+.mintTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.mintSelect,
+.mintInput {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: var(--text-sm);
+  padding: var(--space-3) var(--space-4);
+}
+
+.mintSelect:focus,
+.mintInput:focus {
+  outline: none;
+  border-color: var(--accent-purple);
+}
+
+.mintInput {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.mintActions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+/* Collection grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-5);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  transition: all 0.25s var(--ease-spring);
+  animation: cardIn 0.4s var(--ease-spring);
+}
+
+.card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  border-color: var(--accent-purple);
+  box-shadow: var(--shadow-glow-purple);
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.cardAvatar {
+  border: 1px solid var(--ink);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+}
+
+.cardName {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.cardRole {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+.cardFlavor {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.5;
+  margin-top: var(--space-2);
+}
+
+.cardFooter {
+  margin-top: auto;
+  padding-top: var(--space-4);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.confirmed {
+  color: var(--accent-emerald);
+}
+
+.pending {
+  color: var(--accent-amber);
+}
+
+/* Silhouettes */
+.silhouette {
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  opacity: 0.55;
+  transition: opacity 0.25s ease;
+}
+
+.silhouette:hover {
+  opacity: 0.85;
+}
+
+.silhouetteAvatar {
+  border: 1px solid var(--ink);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+}
+
+.silhouetteName {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.silhouetteHint {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.demoNote {
+  text-align: center;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.ruleLine {
+  margin: var(--space-3) auto 0;
+  max-width: 560px;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.mintRule {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  line-height: 1.5;
+}

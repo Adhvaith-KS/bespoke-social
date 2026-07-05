@@ -1,0 +1,267 @@
+.story {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.titleGradient {
+  color: var(--ink);
+}
+
+.subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.message {
+  position: fixed;
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-5);
+  font-weight: 600;
+  z-index: 50;
+  box-shadow: var(--shadow-glow-cyan);
+  animation: storyMsgIn 0.3s var(--ease-spring);
+}
+
+@keyframes storyMsgIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Recap */
+.recap {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-cyan);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+}
+
+.recapLabel {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-cyan);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.recapText {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.demoNote {
+  margin-top: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+/* Scroll */
+.scroll {
+  display: flex;
+  flex-direction: column;
+}
+
+.turnWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.connector {
+  width: 2px;
+  height: 28px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, var(--accent-purple), var(--accent-cyan));
+  opacity: 0.5;
+}
+
+.turnCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.25s var(--ease-spring);
+  animation: turnIn 0.4s var(--ease-spring);
+}
+
+.turnCard:hover {
+  border-color: var(--border-medium);
+  transform: translateY(-2px);
+}
+
+@keyframes turnIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.illustration {
+  width: 100%;
+  display: block;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.turnBody {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.turnMeta {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.turnDay {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--accent-purple-light);
+}
+
+.turnDate {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.turnText {
+  font-size: var(--text-base);
+  line-height: 1.65;
+}
+
+.turnAuthor {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+/* Write box */
+.writeBox {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-glow-purple);
+}
+
+.writeLabel {
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+
+.writeInput {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  padding: var(--space-3) var(--space-4);
+  resize: vertical;
+}
+
+.writeInput:focus {
+  outline: none;
+  border-color: var(--accent-purple);
+}
+
+.writeFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.writeCount {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.closed {
+  text-align: center;
+  padding: var(--space-4);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+.empty {
+  text-align: center;
+  padding: var(--space-10) var(--space-6);
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--border-subtle);
+}
+
+.emptyIcon {
+  font-size: 2.4rem;
+  margin-bottom: var(--space-3);
+}
+
+/* Whose turn banner */
+.turnBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius-md);
+  background: #fff6c8;
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--text-sm);
+  box-shadow: var(--shadow-stamp);
+}
+
+.turnAuthorChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius-full);
+  background: #fff;
+  padding: 2px 10px 2px 4px;
+  font-size: var(--text-xs);
+  font-weight: 800;
+}
