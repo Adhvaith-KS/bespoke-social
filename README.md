@@ -1,6 +1,6 @@
 # Bespoke Social
 
-A culture app for Bespoke Labs, built for a company hackathon by three people across three time zones. It runs the team's daily games, photo challenges, trivia, and gossip, all narrated by **Stitch**, a robotic goat Culture Overlord who takes the whole thing far too seriously.
+A culture app for Bespoke Labs, built for a company hackathon for people across more than three time zones. It runs the team's daily games, photo challenges, trivia, and gossip, all narrated by **Stitch**, a robotic goat Culture Overlord who takes the whole thing far too seriously.
 
 Sign-in is Google, restricted to `@bespokelabs.ai`. Everyone earns bespoke social points by being active: solving puzzles, posting photos, showing up.
 
@@ -18,10 +18,6 @@ Sign-in is Google, restricted to `@bespokelabs.ai`. Everyone earns bespoke socia
 - **Profile** (`/me`) — stats, streaks, badges, player card, feature opt-ins.
 
 Every feature that scores points writes to one shared events ledger, so streaks, badges, and leaderboards are all derived from the same source of truth rather than tracked separately per game.
-
-## Status
-
-Slack integration was deliberately deferred (team decision) so the rest of the app could get fully built first — see [`bespoke-arcade/SLACK-TODO.md`](bespoke-arcade/SLACK-TODO.md) for exactly what's stubbed and why. Everything else above is live and playable. The app also runs in a demo mode with no database configured at all, so it's never blocked on setup.
 
 ## Tech stack
 
@@ -47,10 +43,7 @@ bespoke-arcade/    the Next.js app, worker, and database migrations
 docs/              original pre-build planning document (kept for context)
 ```
 
-## Background
-
-This started life as a detailed design document written before any code existed, handed to coding agents as a build spec. It's kept at [`docs/original-design-doc.md`](docs/original-design-doc.md) for anyone curious how the project was scoped, alongside the demo video script at [`bespoke-arcade/DEMO-SCRIPT.md`](bespoke-arcade/DEMO-SCRIPT.md).
 
 ## Team
 
-Adhvaith, Tarun, and Shrey, spread across the US and India, supervised loosely by a robotic goat.
+Adhvaith, Tarun, and Shrey.
