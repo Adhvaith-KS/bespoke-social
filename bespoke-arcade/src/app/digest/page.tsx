@@ -87,7 +87,7 @@ export default function DigestPage() {
           <figure className={styles.photoFeature} id="digest-photo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/bereal/bereal1.jpg"
+              src="/bereal/bereal1.png"
               alt="Best BE(spoke)REAL of the week"
               className={styles.photoImage}
             />
