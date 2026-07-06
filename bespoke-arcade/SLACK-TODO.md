@@ -31,11 +31,11 @@
    (wordle, bespokle, trivia results) with the existing `ShareToSlack`
    component (`src/components/ShareToSlack.tsx`, kept in the repo, already
    enqueues `share_commentary` jobs). Post format: player name + spoiler-free
-   grid + Baabbage commentary + streak, into `#arcade-scores`.
+   grid + Stitch commentary + streak, into `#arcade-scores`.
 
 4. **Two Truths, One Lie EOD reveal** — voting results are intentionally
    hidden in the app. A scheduled job posts the reveal (person, the lie,
-   vote split, one Baabbage line) to `#the-arcade` at end of day. Voting
+   vote split, one Stitch line) to `#the-arcade` at end of day. Voting
    data needs persisting first (`ttal_days.votes`).
 
 5. **BE(spoke)REAL Award Ceremony** — nightly job posts awards over the
@@ -53,7 +53,7 @@
    Users are keyed `slack_id = google:<email>` today, designed to be
    swapped to real Slack IDs in one migration.
 
-9. **Baabbage in Slack** — the Culture Overlord persona posts everything
+9. **Stitch in Slack** — the Culture Overlord persona posts everything
    above in one voice. Persona prompt lives in `worker/index.mjs`
    (`PERSONA`) and `src/components/Mascot.tsx` (name/title). House style:
    no quotation marks, no semicolons.

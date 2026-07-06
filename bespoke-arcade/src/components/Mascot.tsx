@@ -8,7 +8,7 @@
  */
 
 export const MASCOT = {
-  name: 'Baabbage',
+  name: 'Stitch',
   title: 'Culture Overlord',
   titleNote: 'title under review',
 };

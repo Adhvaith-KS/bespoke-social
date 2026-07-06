@@ -62,7 +62,7 @@ export default function Nav() {
 
       <div className={styles.railNote}>
         <strong>Play daily, earn bespoke social points.</strong>
-        <span>Baabbage is watching the leaderboard.</span>
+        <span>Stitch is watching the leaderboard.</span>
       </div>
 
       {process.env.NEXT_PUBLIC_SUPABASE_URL && (

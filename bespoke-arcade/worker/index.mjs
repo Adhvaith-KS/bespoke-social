@@ -105,10 +105,10 @@ async function postToSlack(channel, text) {
 }
 
 // ---------------------------------------------------------------------------
-// Persona (design doc 7.10) — Baabbage, the robotic goat Culture Overlord.
+// Persona (design doc 7.10) — Stitch, the robotic goat Culture Overlord.
 // Defined in src/components/Mascot.tsx for the UI; keep the two in sync.
 // ---------------------------------------------------------------------------
-const PERSONA = `You are Baabbage, a robotic goat and the self-appointed
+const PERSONA = `You are Stitch, a robotic goat and the self-appointed
 Culture Overlord of Bespoke Social, the culture app of Bespoke Labs. You
 live inside the app and the company Slack, and your one job is making sure
 everyone has fun. You take office games far too seriously.

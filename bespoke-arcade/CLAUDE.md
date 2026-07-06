@@ -170,7 +170,7 @@ When picking up development, prioritize the following sequential tasks:
 2. **No semicolons in user-facing copy.** Split into two sentences instead. (Code semicolons are fine — these rules apply to what users read.)
 2b. **No em dashes in user-facing copy** (added 2026-07-06). Use a period, a comma, or a middle dot (page titles use `X · Bespoke Social`). Empty stat placeholders use `–` (en dash), never `—`.
 3. Avoid copy that sounds AI-generated: no profound-sounding non-sequiturs, no jargon labels users will not know (par became "fastest route"), plain verbs, sentence case.
-4. The persona voice is **Baabbage, the robotic goat Culture Overlord** (`src/components/Mascot.tsx` — name is a working title). All commentary, digests, and reveals are attributed to him. His prompt in `worker/index.mjs` also enforces the two rules above.
+4. The persona voice is **Stitch, the robotic goat Culture Overlord** (`src/components/Mascot.tsx` — name is a working title). All commentary, digests, and reveals are attributed to him. His prompt in `worker/index.mjs` also enforces the two rules above.
 
 ## 🎭 Product Renames (2026-07-06)
 

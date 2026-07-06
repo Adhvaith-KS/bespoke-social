@@ -11,38 +11,38 @@ function getTodaysQuestions() {
     {
       q: 'What does the donut bot in #virtual-coffee actually do?',
       options: [
-        'Pairs two teammates for a casual chat',
         'Orders donuts to the office',
+        'Pairs two teammates for a casual chat',
         'Reviews pull requests',
         'Schedules standups',
       ],
-      answer_index: 0,
+      answer_index: 1,
       source_quote:
         'The donut bot matches two random teammates every cycle for a coffee chat about anything but work. Finish one and you can mint their card in Bespoke Social.',
     },
     {
       q: 'Bespoke Labs built an open source library for synthetic data curation. What is it called?',
-      options: ['Curator', 'Forge', 'Alchemist', 'Distiller'],
-      answer_index: 0,
+      options: ['Forge', 'Alchemist', 'Curator', 'Distiller'],
+      answer_index: 2,
       source_quote:
         'Curator is our open source Python library for synthetic data generation and post-training data curation. It powers OpenThoughts, the open reasoning dataset with over a hundred public models trained on it.',
     },
     {
       q: 'When people say a model hallucinated, what actually happened?',
       options: [
-        'It stated something false with total confidence',
         'It refused to answer the question',
         'It ran out of memory mid-answer',
         'It repeated the prompt back',
+        'It stated something false with total confidence',
       ],
-      answer_index: 0,
+      answer_index: 3,
       source_quote:
         'Models predict the most likely next words rather than checking facts, so they can produce confident answers that are simply wrong. That is a hallucination, and it is why grounding answers in real sources matters so much.',
     },
     {
       q: 'The word bespoke originally comes from which trade?',
-      options: ['Tailoring', 'Carpentry', 'Printing', 'Shoemaking'],
-      answer_index: 0,
+      options: ['Carpentry', 'Tailoring', 'Printing', 'Shoemaking'],
+      answer_index: 1,
       source_quote:
         'In old tailoring shops, cloth a customer had claimed was said to be bespoken for. Made-to-order suits became bespoke, and centuries later a certain company borrowed the word.',
     },
