@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { evaluateGuess, type LetterStatus } from '@/lib/wordle-dictionary';
+import { evaluateGuess, isValidWord, type LetterStatus } from '@/lib/wordle-dictionary';
+import { GUESS_SET } from '@/lib/wordle-guesses';
 
 /**
  * Today's word — in production this comes from the DB (wordle_days table).
@@ -29,11 +30,18 @@ export async function POST(request: NextRequest) {
 
     const normalizedGuess = guess.toLowerCase().trim();
 
-    // Any five letters count as a guess — a dictionary gate kept
-    // rejecting perfectly common words and it wasn't worth the friction
     if (!/^[a-z]{5}$/.test(normalizedGuess)) {
       return NextResponse.json(
         { error: 'Letters only, five of them', valid: false },
+        { status: 400 }
+      );
+    }
+
+    // Real words only: ~16k five letter words from a public domain list,
+    // plus the company vocab in wordle-dictionary.ts
+    if (!GUESS_SET.has(normalizedGuess) && !isValidWord(normalizedGuess)) {
+      return NextResponse.json(
+        { error: 'Not in the dictionary', valid: false },
         { status: 400 }
       );
     }

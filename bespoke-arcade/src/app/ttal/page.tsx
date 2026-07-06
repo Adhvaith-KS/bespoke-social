@@ -3,16 +3,15 @@
 import { useState } from 'react';
 import styles from './ttal.module.css';
 import Avatar from '@/components/Avatar';
-import { ME, personOfTheDay } from '@/lib/demo-people';
+import { ME, PEOPLE } from '@/lib/demo-people';
 
-// Today's featured person rotates through the cast. Statements are demo
-// placeholders until people submit their own below.
-const FEATURED_PERSON = personOfTheDay(1);
+// Today's featured person. Daily rotation returns with the backend.
+const FEATURED_PERSON = PEOPLE[0];
 
 const DEMO_STATEMENTS = [
-  'I have watched the same movie in theaters five times in one week',
-  'I once won a regional yo-yo competition as a kid',
-  'I keep a spreadsheet ranking every biryani place I have ever eaten at',
+  'Almost fell to my death after slipping due to snow on a trek',
+  'Went viral for making a reel about going to the minions movie wearing suits (it was a meme trend in 2022)',
+  'Watched the same movie twice a day at the movie theatre everyday for a week',
 ];
 
 export default function TTALPage() {

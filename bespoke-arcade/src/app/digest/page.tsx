@@ -10,7 +10,7 @@ const WEEK_STANDINGS = [
 ];
 
 export const metadata = {
-  title: 'Friday Digest · Bespoke Social',
+  title: 'Weekly Culture Digest · Bespoke Social',
 };
 
 /**
@@ -59,7 +59,7 @@ export default function DigestPage() {
       <div className={styles.digest}>
         <div className={styles.header}>
           <h1 className={styles.title}>
-            <span className={styles.titleGradient}>The Friday Digest</span>
+            <span className={styles.titleGradient}>Weekly Culture Digest</span>
           </h1>
           <p className={styles.subtitle}>
             Weekly culture recap, written entirely by {MASCOT.name}

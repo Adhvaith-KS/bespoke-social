@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import styles from './story.module.css';
 import Avatar from '@/components/Avatar';
-import { ME, PEOPLE, personOfTheDay } from '@/lib/demo-people';
+import { ME, PEOPLE } from '@/lib/demo-people';
 
 interface StoryTurn {
   id: string;
@@ -43,7 +43,9 @@ const DEMO_TURNS: StoryTurn[] = [
   },
 ];
 
-const TODAYS_AUTHOR = personOfTheDay();
+// Tarun and Shrey have written their turns, so today the pen goes to
+// Adhvaith. Proper lottery rotation returns with the backend.
+const TODAYS_AUTHOR = PEOPLE[0];
 
 export default function StoryScroll() {
   const [turns, setTurns] = useState<StoryTurn[]>(DEMO_TURNS);

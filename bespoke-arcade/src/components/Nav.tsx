@@ -13,16 +13,16 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { href: '/', label: 'Today', icon: '🏠' },
-  { href: '/wordle', label: 'Wordle', icon: '🔤' },
-  { href: '/bespokle', label: 'Bespokle', icon: '🪜' },
+  { href: '/wordle', label: 'Bespoke Wordle', icon: '🔤' },
   { href: '/trivia', label: 'Trivia', icon: '🧠' },
   { href: '/bereal', label: 'BE(spoke)REAL', icon: '📸' },
   { href: '/ttal', label: '2 Truths 1 Lie', icon: '🎭' },
+  { href: '/bespokle', label: 'Bespokle', icon: '🪜' },
   { href: '/story', label: 'Story', icon: '📖' },
   { href: '/cards', label: 'Cards', icon: '🃏' },
-  { href: '/digest', label: 'Digest', icon: '📰' },
+  { href: '/digest', label: 'Weekly culture digest', icon: '📰' },
   { href: '/leaderboard', label: 'Leaderboard', icon: '🏆' },
-  { href: '/me', label: 'Me', icon: '👤' },
+  { href: '/me', label: 'My profile', icon: '👤' },
 ];
 
 /**

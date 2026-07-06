@@ -21,16 +21,11 @@ function getTodaysQuestions() {
         'The donut bot matches two random teammates every cycle for a coffee chat about anything but work. Finish one and you can mint their card in Bespoke Social.',
     },
     {
-      q: 'Who is Baabbage, our culture overlord?',
-      options: [
-        'A robotic goat',
-        'A sentient coffee machine',
-        'A rubber duck with seniority',
-        'An extremely confident intern',
-      ],
+      q: 'Bespoke Labs built an open source library for synthetic data curation. What is it called?',
+      options: ['Curator', 'Forge', 'Alchemist', 'Distiller'],
       answer_index: 0,
       source_quote:
-        'Baabbage is the robotic goat who lives inside Bespoke Social and our Slack. He writes the leaderboard commentary and runs the nightly Award Ceremony. His job title is still under review.',
+        'Curator is our open source Python library for synthetic data generation and post-training data curation. It powers OpenThoughts, the open reasoning dataset with over a hundred public models trained on it.',
     },
     {
       q: 'When people say a model hallucinated, what actually happened?',
