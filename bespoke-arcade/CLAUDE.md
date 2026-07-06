@@ -1,12 +1,12 @@
-# The Bespoke Arcade — Claude Code Context & Handoff
+# Bespoke Social — Claude Code Context
 
-Welcome to **The Bespoke Arcade** repository! This document provides complete architectural context, established design patterns, progress tracking, and development guidelines for assisting the developer.
+Welcome to the **Bespoke Social** repository! This document provides complete architectural context, established design patterns, progress tracking, and development guidelines for assisting the developer.
 
 ---
 
 ## 🛠 Project Overview & Architecture
 
-**The Bespoke Arcade** is a self-running culture and AI game app for Bespoke Labs, designed to run autonomously via AI models and worker jobs.
+**Bespoke Social** is a self-running culture and AI game app for Bespoke Labs, designed to run autonomously via AI models and worker jobs.
 
 ### Technology Stack
 - **Framework**: Next.js 16.2.10 (App Router) with TypeScript

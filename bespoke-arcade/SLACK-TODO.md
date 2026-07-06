@@ -1,9 +1,10 @@
 # SLACK-TODO — everything deferred until Slack integration
 
-> **Living handoff document.** This project will be transferred before it is
-> fully complete. Every Slack-dependent feature is deliberately stubbed —
-> this file is the single list of what remains. Keep it updated whenever a
-> new Slack touchpoint is added or one is completed.
+> **Living tracking document.** Slack integration was deliberately deferred
+> (team decision, 2026-07-05) so the rest of the app could get built first.
+> Every Slack-dependent feature is stubbed — this file is the single list of
+> what remains. Keep it updated whenever a new Slack touchpoint is added or
+> one is completed.
 
 ## Current state (2026-07-06)
 

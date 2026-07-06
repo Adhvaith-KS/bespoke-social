@@ -1,5 +1,12 @@
 # The Bespoke Arcade: Design Document
 
+> **Note:** this is the original pre-build planning document, written before a
+> single line of code existed and handed to coding agents as the spec. It's
+> kept here for anyone curious how the project was scoped. The product has
+> since been renamed **Bespoke Social**, Slack integration was deliberately
+> deferred, and Google sign-in replaced the planned Slack OIDC auth — see the
+> [root README](../README.md) for what's actually built today.
+
 A self-running culture app for Bespoke Labs, built for the June 12 to 14 hackathon. Frontier models (Claude Fable 5 and GPT-5.5) generate all daily content, judge photos, write commentary, interview employees, and operate the app end to end. The demo's closing line: no human runs this app.
 
 This document is written to be handed to coding agents. It specifies architecture, data model, every feature, every scheduled job, AI call patterns, prompts guidance, guardrails, and a three-day build plan.
